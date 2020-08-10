@@ -13,7 +13,8 @@
   "scripts": {
     "test": "xo",
     "start": "node_modules/.bin/tsc -p game && electron .",
-    "build": "node_modules/.bin/tsc -p game && electron-packager . --out=dist --asar --overwrite --all"
+    "build": "node_modules/.bin/tsc -p game",
+    "pack": "node_modules/.bin/tsc -p game && electron-packager . --out=dist --asar --overwrite --all"
   },
   "files": [
     "index.js",
